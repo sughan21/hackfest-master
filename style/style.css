@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Kenia&family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&family=Roboto:ital,wght@0,500;0,700;0,900;1,400&family=Rye&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* dark shades of primary color*/
+
+  --clr-very-dark-blue: hsl(243, 87%, 12%);
+  --clr-desaturated-blue: hsl(238, 22%, 44%);
+  --clr-bright-blue: hsl(224, 93%, 58%);
+  --clr-moderate-cyan: hsl(170, 45%, 43%);
+  --clr-light-grayish-blue: hsl(240, 75%, 98%);
+  --clr-light-gray: hsl(0, 0%, 75%);
+
+  --clr-white: #fff;
+  --clr-black: #222;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  --max-width: 1170px;
+  --fixed-width: 450px;
+
+  /* Headings, Call-to-actions, Header Navigation
+ */
+  --ff-raleway: "Raleway", sans-serif;
+  /* Body
+ */
+  --ff-open-sans: "Open Sans", sans-serif;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--ff-open-sans);
+  line-height: 1.5;
+  background: url(../images/istockphoto-1225010492-170667a.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  -o-object-fit: contain;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+/* header */
+.header {
+  width: 90vw;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 50px;
+}
+
+/* hero section */
+.hero-section {
+  height: calc(100vh - 10rem);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.main-text {
+  font-size: 1.5rem;
+  font-family: var(--ff-open-sans);
+  line-height: 1.5;
+  font-weight: 700;
+  text-transform: none;
+  color: var(--clr-very-dark-blue);
+  color: #fff;
+}
+.description {
+  font-size: 1rem;
+  font-family: var(--ff-open-sans);
+  color: var(--clr-very-dark-blue);
+  color: white;
+}
+
+.quotes{
+  display: flex;
+  color: #fff;
+}
+.icons{
+  display: flex;
+  gap: 2rem;
+  color: #fff;
+}
+
+.cta-container img {
+  width: 50%;
+}
+.right-container {
+  order: 1;
+  padding: 2rem;
+}
+
+.background{
+  border-radius: 1rem;
+}
+
+.right-container,.left-container{
+  width: 50%;
+}
+
+
+@media screen and (min-width: 991px) {
+  .header {
+    gap: 5rem;
+  }
+  .hero-section {
+    flex-direction: row-reverse;
+    text-align: start;
+    gap: 3rem;
+    align-items: flex-start;
+  }
+  .cta-container {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .control {
+    width: 60%;
+  }
+}

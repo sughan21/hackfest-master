@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+:root {
+  --clr-oxford-blue: hsla(212, 100%, 17%, 1);
+  --clr-oxford-blue-3: hsla(219, 100%, 10%, 1);
+  --clr-delft-blue: hsla(220, 29%, 28%, 1);
+  --clr-slate-gray: hsla(222, 11%, 54%, 1);
+  --clr-cherry-blossom-pink: hsla(345, 100%, 85%, 1);
+  --clr-bakermiller-pink: hsla(345, 100%, 78%, 1);
+  --clr-russian-violet: hsla(255, 45%, 18%, 1);
+  --clr-lilac: hsla(292, 28%, 68%, 1);
+  --clr-cornsilk: hsla(52, 94%, 94%, 1);
+  --clr-earth-yellow: hsla(32, 65%, 62%, 1);
+  --clr-tigers-eye: hsla(28, 67%, 44%, 1);
+  --clr-uranian-blue: hsla(208, 97%, 87%, 1);
+  --clr-light-sky-blue: hsla(209, 100%, 82%, 1);
+  --clr-mauve: hsla(275, 100%, 89%, 1);
+  --clr-verdigris: hsla(183, 100%, 36%, 1);
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.big-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  /* height: 100vh; */
+  height: 20rem;
+  background-color: var(--clr-slate-gray);
+  background: conic-gradient(#a3d3ff, #e8c7ff);
+  /* background: conic-gradient(#f69d3c, #3f87a6); */
+  font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 900;
+  margin-top: 3rem;
+}
+
+.box-one a {
+  padding: 0.5rem 7rem;
+  border-radius: 8px;
+  box-shadow: 0px 8px 20px var(--clr-oxford-blue);
+  background-color: var(--clr-oxford-blue);
+  color: var(--clr-earth-yellow);
+  font-size: 28px;
+}
+
+.box-two a {
+  color: var(--clr-oxford-blue);
+  padding: 0.5rem 7rem;
+  border-radius: 8px;
+  box-shadow: 0px 8px 20px var(--clr-oxford-blue);
+  background-color: var(--clr-bakermiller-pink);
+  font-size: 25px;
+}
+.links {
+  font-size: 15px;
+  display: flex;
+  gap: 6rem;
+  margin-top: 5rem;
+}
+.connect {
+  color: var(--clr-tigers-eye);
+  font-weight: 600;
+}
+.forum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(hsla(52, 94%, 94%, 1), hsla(32, 65%, 62%, 1));
+  font-size: 22px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  color: var(--clr-oxford-blue);
+}
+.feed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 1.5rem;
+  font-size: 26px;
+  background: conic-gradient(hsla(222, 11%, 54%, 1), hsla(220, 29%, 28%, 1));
+}
+.para {
+  font-size: 42px;
+  font-weight: 900;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #e8c7ff;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(hsla(209, 100%, 82%, 1), hsla(345, 100%, 78%, 1));
+}
+.pg-one {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--clr-verdigris);
+}
+.service-para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 50%;
+  margin: auto;
+  font-size: 32px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.footer-icon {
+  display: flex;
+  gap: 1rem;
+}
