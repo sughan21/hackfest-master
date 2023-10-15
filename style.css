@@ -213,3 +213,24 @@ nav ul li img {
 .sidebar-main h2 {
   color: #008ad2;
 }
+
+.Notification-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ff0000;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 2rem;
+  gap: 1.5rem;
+}
+.text {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.notifi-bar {
+  margin-bottom: 1rem;
+  color: aquamarine;
+}
